@@ -80,7 +80,7 @@ body {
     color:black;
 }
 #group1 .parallax_Layer--deep {
-    background-image: url('https:/mat-foucher.github.io/christineWebsite/images/titlebackground.jpg');
+    background-image: url('images/titlebackground.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
