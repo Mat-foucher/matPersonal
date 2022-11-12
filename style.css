@@ -15,20 +15,6 @@ body {
 
 /* Parallax */
 
-.card {
-    height: 500px;
-    background-color:antiquewhite;
-    background: scroll;
-}
-
-.body {
-    font: 100% / 1.5 monospace;
-    background: slategray;
-}
-
-#content{
-    background:none;
-}
 
 .parallax {
     font-size: 200%;
