@@ -84,7 +84,7 @@ body {
 /* Parallax Groups */
 
 #group1 {
-    z-index:3;
+    z-index:2;
 }
 #group1 .parallax_layer--base {
     color:black;
@@ -100,7 +100,7 @@ body {
 }
 
 #group2 {
-    z-index:2;
+    z-index:4;
 }
 #group2 .parallax_layer--fore {
     color:black;
