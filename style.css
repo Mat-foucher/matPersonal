@@ -98,3 +98,13 @@ body {
     background-size: 70%;
 }
 
+#group2 {
+    z-index:4;
+}
+#group2 .parallax_layer--fore {
+    color:black;
+}
+#group2 .parallax_layer--base {
+    color: black;
+    background: aliceblue;
+}
