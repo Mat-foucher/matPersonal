@@ -80,7 +80,10 @@ body {
 #group1 .parallax_layer--base {
     color:black;
 }
-#group1 .parallax_Layer--deep {
+#group1 .parallax_layer--back {
+    color: black;
+}
+#group1 .parallax_layer--deep {
     background-image: url('images/titlebackground.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
