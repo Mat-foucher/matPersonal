@@ -100,7 +100,7 @@ body {
 }
 
 #group2 {
-    z-index:4;
+    z-index:3;
 }
 #group2 .parallax_layer--fore {
     color:black;
