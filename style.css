@@ -84,28 +84,33 @@ body {
 /* Parallax Groups */
 
 #group1 {
-    z-index:2;
+    z-index:5;
 }
 #group1 .parallax_layer--base {
     color:black;
+    background-color: antiquewhite;
 }
-#group1 .parallax_layer--back {
-    color: black;
-}
-#group1 .parallax_layer--deep {
-    /* background-image: url('images/titlebackground.jpg');
-    background-repeat: no-repeat;
-    background-size: 70%; */
-    background: antiquewhite;
-}
+
 
 #group2 {
     z-index:3;
 }
-#group2 .parallax_layer--fore {
-    color:black;
-}
 #group2 .parallax_layer--base {
+    color:black;
+    background:none;
+}
+#group2 .parallax_layer--back {
     color: black;
     background: aliceblue;
+}
+
+#group3 {
+    z-index:4;
+}
+#group3 .parallax_layer--fore {
+    color:black;
+    background:none;
+}
+#group3 .parallax_layer--base {
+    background-color: antiquewhite;
 }
