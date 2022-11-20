@@ -101,7 +101,7 @@ body {
 }
 #group2 .parallax_layer--back {
     color: black;
-    background: aliceblue;
+    background-image: url('images/titlebackground.jpg');
 }
 
 #group3 {
@@ -112,5 +112,6 @@ body {
     background:none;
 }
 #group3 .parallax_layer--base {
+    color: black;
     background-color: antiquewhite;
 }
