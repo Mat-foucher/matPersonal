@@ -102,6 +102,7 @@ body {
 #group2 .parallax_layer--back {
     color: black;
     background-image: url('images/titlebackground.jpg');
+    background-size: 50%;
 }
 
 #group3 {
