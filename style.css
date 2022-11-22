@@ -95,6 +95,7 @@ body {
     color:black;
     background-color: antiquewhite;
     font-family: 'titlefont';
+    font-size: 200%;
 }
 
 
@@ -117,6 +118,7 @@ body {
     color:black;
     background:none;
     text-align:center;
+    font-family: 'titlefont';
 }
 #group3 .parallax_layer--base {
     color: black;
