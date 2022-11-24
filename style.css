@@ -54,7 +54,7 @@ header li a {
 .fade {
     margin: 50px;
     padding: 50px;
-    background-color: antiquewhite;
+    background: none;
     opacity: 1;
 }
 
