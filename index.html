@@ -117,6 +117,10 @@
             <div id="group2" class="parallax__group">
                 
                 <div class="parallax_layer--base">
+                    <section class="tag none">
+                        <h1> Yeah I have Skills</h1>
+                        <p> Whatchu gonna do about it.</p>
+                    </section>
                 </div>
                 <div class="parallax_layer--back">
                     <img src="https://mat-foucher.github.io/christineWebsite/images/titlebackground.jpg">
@@ -141,6 +145,23 @@
         }
         debugInput.addEventListener("click", updateDebugState);
         updateDebugState();
+
+        // Scroll Fade JS:
+
+        $(document).on("scroll", function() {
+            var pageTop = $(document).scrollTop();
+            var pageBottom = pageTop + $(window).height();
+            var tags = $(".tag");
+
+            for(var i = 0; i < tags.length; i++) {
+                var tag = tags[i];
+                if($(tag).position().top < pageBottom) {
+                    $(tag).addClass("visible");
+                } else {
+                    $(tag).removeClass("visible");
+                }
+            }
+        });
     </script>
 
     <script>
