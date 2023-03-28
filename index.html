@@ -89,31 +89,7 @@
     
 </head>
 
-<script>
-    // Scroll JS:
 
-    window.addEventListener('scroll', () => {
-        document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-    }, false);
-
-    // Scroll Fade JS:
-    $(window).on("load",function() {
-            $(window).scroll(function() {
-                var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-                $(".fade").each(function() {
-                /* Check the location of each desired element */
-                var objectBottom = $(this).offset().top + $(this).outerHeight();
-                
-                /* If the element is completely within bounds of the window, fade it in */
-                if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-                    if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-                } else { //object goes out of view (scrolling up)
-                    if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-                }
-            });
-        }).scroll(); //invoke scroll-handler on page-load
-    });
-</script>
 
 <header>
     <nav>
@@ -152,7 +128,9 @@
             <div id="group2" class="parallax__group">
                 
                 <div class="parallax_layer--base">
-                    
+                    <div>
+                        <div class="fade">Fade me in like you know you like it baby oh yeah</div>
+                    </div>
                 </div>
                 <div class="parallax_layer--back">
                     <img src="https://mat-foucher.github.io/christineWebsite/images/thesky.png">
@@ -188,9 +166,33 @@
         </div>
     </div>
 
-    <div>
-        <div class="fade">Fade me in like you know you like it baby oh yeah</div>
-    </div>
+    
+
+    <script>
+        // Scroll JS:
+    
+        window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        }, false);
+    
+        // Scroll Fade JS:
+        $(window).on("load",function() {
+                $(window).scroll(function() {
+                    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+                    $(".fade").each(function() {
+                    /* Check the location of each desired element */
+                    var objectBottom = $(this).offset().top + $(this).outerHeight();
+                    
+                    /* If the element is completely within bounds of the window, fade it in */
+                    if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+                    } else { //object goes out of view (scrolling up)
+                        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+                    }
+                });
+            }).scroll(); //invoke scroll-handler on page-load
+        });
+    </script>
     <script async="" src="//www.google-analytics.com/analytics.js"></script>
 
     
