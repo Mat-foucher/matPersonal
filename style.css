@@ -58,6 +58,12 @@ svg {
     animation-delay: calc(var(--scroll)* -1s);
 }
 
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
 /* Fade In On Scroll */
 
 .fade-in-section { 
