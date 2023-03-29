@@ -49,6 +49,21 @@ header li a {
     text-decoration: none;
 }
 
+/* Spinning Picture */
+
+svg {
+    position: fixed;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll)* -1s);
+}
+
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
 /* Fade In On Scroll */
 
 .fade-in-section { 
